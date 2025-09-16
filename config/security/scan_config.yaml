@@ -1,0 +1,16 @@
+# 安全扫描配置
+security:
+  scan_enabled: true
+  input_validation: true
+  xss_protection: true
+  sql_injection_protection: true
+  rate_limiting: true
+  
+scan_schedule:
+  daily: true
+  time: "02:00"
+  
+reporting:
+  format: markdown
+  output_dir: docs/security/
+EOF
